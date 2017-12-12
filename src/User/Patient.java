@@ -1,19 +1,24 @@
 package User;
 
-public class Patient implements Person{
-    protected String name,gender,Symtomp;
-    protected int age,patientId;
+import User.Appointment.Appointment;
 
-    @Override
-    public void getData(String name, int age, String gender) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-    }
-    void getPatientData(int patientId ,String Symtomp){
-        this.patientId = patientId;
-        this.Symtomp = Symtomp;
+public class Patient extends Person{
+    protected String symptoms;
+    protected Appointment appointment;
+
+    public String getSymptoms() {
+        return symptoms;
     }
 
+    public void setSymptoms(String symptoms) {
+        this.symptoms = symptoms;
+    }
 
+    public Appointment getAppointment() {
+        return appointment;
+    }
+
+    public void setAppointment(Appointment appointment) {
+        this.appointment = appointment;
+    }
 }

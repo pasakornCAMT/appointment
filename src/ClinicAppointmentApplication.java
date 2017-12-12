@@ -1,4 +1,5 @@
 import Creator.Creator;
+import Search.SearchFunction;
 import User.Appointment.Appointment;
 import User.Date.DateAppointment;
 import User.Doctor;
@@ -20,8 +21,8 @@ public class ClinicAppointmentApplication {
 
         Appointment appointment = c.createAppointment(dateAppointment,doc1,patient);
 
-
-
+        SearchFunction s = new SearchFunction();
+        s.Search();
 
     }
 }

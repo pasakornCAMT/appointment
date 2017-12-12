@@ -1,26 +1,26 @@
 package User.Appointment;
 
+import User.Date.DateAppointment;
 import User.Doctor;
 import User.Patient;
 
-import java.util.Date;
 
 public class Appointment {
-    private Date date;
+    private DateAppointment date;
     Doctor doctor;
     Patient patient;
 
-    public Appointment() {
+    public Appointment(DateAppointment date, Doctor doctor, Patient patient) {
         this.date = date;
         this.doctor = doctor;
         this.patient = patient;
     }
 
-    public Date getDate() {
+    public DateAppointment getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(DateAppointment date) {
         this.date = date;
     }
 

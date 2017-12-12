@@ -8,6 +8,10 @@ public class Doctor extends Person {
 
     protected List<Appointment> appointments;
 
+    public Doctor(int id, String name) {
+        super(id, name);
+    }
+
     public List<Appointment> getAppointments() {
         return appointments;
     }

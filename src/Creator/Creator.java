@@ -1,21 +1,21 @@
 package Creator;
 
 import User.Appointment.Appointment;
+import User.Date.DateAppointment;
 import User.Doctor;
 import User.Patient;
 
-import java.util.Date;
 
 public class Creator {
-    public Appointment createAppointment(Doctor doc, Patient pat, Date date) {
-        return new Appointment();
+    public Appointment createAppointment(DateAppointment date, Doctor doctor, Patient patient) {
+        return new Appointment(date,doctor,patient);
     }
 
-    public Doctor createDoctor(int id, String name) {
-        return new Doctor();
+    public Doctor addDoctor(int id, String name) {
+        return new Doctor(id,name);
     }
 
-    public Patient patient(int id, String name) {
-        return new Patient();
+    public Patient addPatient(int id, String name) {
+        return new Patient(id,name);
     }
 }

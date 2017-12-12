@@ -6,6 +6,10 @@ public class Patient extends Person{
     protected String symptoms;
     protected Appointment appointment;
 
+    public Patient(int id, String name) {
+        super(id, name);
+    }
+
     public String getSymptoms() {
         return symptoms;
     }

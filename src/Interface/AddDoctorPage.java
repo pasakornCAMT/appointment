@@ -1,9 +1,6 @@
 package Interface;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-public class AddNewPatient extends Page {
+public class AddDoctorPage extends Page {
     int id;
     String name;
     @Override
@@ -12,6 +9,7 @@ public class AddNewPatient extends Page {
         id = scan.nextInt();
         System.out.println("Name: ");
         name=scan.next();
-        creator.addPatient(id,name);
+        creator.addDoctor(id,name);
+
     }
 }
